@@ -6,7 +6,11 @@ import hashlib, json, os
 from pathlib import Path
 from web3 import Web3
 
-ART = json.loads((Path(__file__).parent / "contracts" / "CattleRegistry.json").read_text())
+_HERE = Path(__file__).parent
+_ART_FILE = _HERE / "CattleRegistry.json"          # flat layout (all files in one folder)
+if not _ART_FILE.exists():
+    _ART_FILE = _HERE / "contracts" / "CattleRegistry.json"   # folder layout
+ART = json.loads(_ART_FILE.read_text())
 
 
 def record_hash(payload: dict) -> str:

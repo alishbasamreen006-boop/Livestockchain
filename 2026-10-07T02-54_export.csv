@@ -1,0 +1,9 @@
+﻿tag,name,species,breed,age_months,weight_kg,owner,status,created
+MW-001,Lali,Buffalo,Nili-Ravi,54,610,Demo Farm Owner,Active,2026-03-20
+MW-002,Moti,Buffalo,Nili-Ravi,48,590,Demo Farm Owner,Active,2026-03-20
+MW-003,Chitti,Cow,Sahiwal,40,420,Demo Farm Owner,Active,2026-03-20
+MW-004,Gulabo,Cow,Cholistani,36,390,Demo Farm Owner,Active,2026-03-20
+MW-005,Kali,Buffalo,Kundi,60,640,Demo Farm Owner,Active,2026-03-20
+MW-006,Rani,Cow,Sahiwal,30,380,Demo Farm Owner,Active,2026-03-20
+MW-007,Sohni,Buffalo,Nili-Ravi,44,580,Demo Farm Owner,Active,2026-03-20
+MW-008,Bholi,Cow,Cross-bred,28,360,Demo Farm Owner,Active,2026-03-20

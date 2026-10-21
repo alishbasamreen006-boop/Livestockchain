@@ -19,7 +19,7 @@ Open the sidebar -> **Load dummy demo data**. Everything works with no wallet an
 5. Sell / Transfer: ownership change recorded on blockchain
 6. Verify & QR: scan QR -> VERIFIED or TAMPERED. Use the "simulate tampering" box to show the panel.
 
-## Files
+## Files (all in ONE folder, no subfolders, so GitHub web upload works)
 - `app.py`        dashboard (Streamlit)
 - `service.py`    saves to database + anchors hash on blockchain, and verifies
 - `blockchain.py` talks to the smart contract (local chain or Sepolia)
@@ -27,8 +27,8 @@ Open the sidebar -> **Load dummy demo data**. Everything works with no wallet an
 - `seed.py`       DUMMY data, 18 mixed animals (replace with real interview data)
 - `livestock.py`  species list, milk species, default milk prices
 - `svg_art.py`    hand-drawn animal pictures (cow, buffalo, bull, calf, goat, sheep)
-- `contracts/CattleRegistry.sol` the smart contract (Solidity)
-- `contracts/CattleRegistry.json` compiled contract (already included)
+- `CattleRegistry.sol` the smart contract (Solidity)
+- `CattleRegistry.json` compiled contract (already included)
 
 ## Stage 2: real public testnet (Sepolia)
 1. Install MetaMask, create a NEW wallet used only for testing (never your real wallet).
@@ -41,4 +41,4 @@ Open the sidebar -> **Load dummy demo data**. Everything works with no wallet an
 - Only fingerprints go on-chain; details stay in the database.
 - Blockchain proves a record was NOT changed AFTER saving. It cannot prove the first entry was truthful, so the vet's signature/role matters.
 - Roles only hide menus for now. Database-level permissions come in Phase 2 (Supabase).
-- If you edit `contracts/CattleRegistry.sol`, recompile with `node compile.js` (needs `npm install solc@0.8.20`).
+- If you edit `CattleRegistry.sol`, recompile with `node compile.js` (needs `npm install solc@0.8.20`).
